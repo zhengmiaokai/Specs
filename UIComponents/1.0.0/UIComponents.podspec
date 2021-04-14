@@ -15,37 +15,37 @@ Pod::Spec.new do |s|
   s.platform       = :ios, "9.0"
   s.source         = { :git => "https://github.com/zhengmiaokai/UIComponents.git", :tag =>"UIComponents_1.0.0"}
 
-  #s.source_files   = "UIComponents/**/*"
+  #s.source_files   = "UIComponents/*.{h,m}"
 
   s.frameworks = 'UIKit','Foundation'
   s.requires_arc   = true
 
   s.subspec 'ToolKit' do |ss|
-    ss.source_files = 'UIComponents/UIComponents/ToolKit/**/*.{h,m}'
+    ss.source_files = 'UIComponents/ToolKit/**/*.{h,m}'
   end
 
   s.subspec 'BannerView' do |ss|
-    ss.source_files = 'UIComponents/UIComponents/BannerView/**/*.{h,m}'
+    ss.source_files = 'UIComponents/BannerView/**/*.{h,m}'
     ss.dependency 'UIComponents/ToolKit'
   end
 
   s.subspec 'PageControl' do |ss|
-    ss.source_files = 'UIComponents/UIComponents/PageControl/**/*.{h,m}'
+    ss.source_files = 'UIComponents/PageControl/**/*.{h,m}'
     ss.dependency  'UIComponents/ToolKit'
   end
 
   s.subspec 'NavigationBar' do |ss|
-    ss.source_files = 'UIComponents/UIComponents/NavigationBar/**/*.{h,m}'
+    ss.source_files = 'UIComponents/NavigationBar/**/*.{h,m}'
     ss.dependency  'UIComponents/ToolKit'
   end
 
   s.subspec 'ProgressHUD' do |ss|
-    ss.source_files = 'UIComponents/UIComponents/ProgressHUD/**/*.{h,m}'
+    ss.source_files = 'UIComponents/ProgressHUD/**/*.{h,m}'
     ss.dependency  'UIComponents/ToolKit'
   end
 
   s.subspec 'ZoomScrollView' do |ss|
-    ss.source_files = 'UIComponents/UIComponents/ZoomScrollView/**/*.{h,m}'
+    ss.source_files = 'UIComponents/ZoomScrollView/**/*.{h,m}'
     ss.dependency  'UIComponents/ToolKit'
   end
 
