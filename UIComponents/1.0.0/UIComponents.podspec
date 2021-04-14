@@ -15,38 +15,38 @@ Pod::Spec.new do |s|
   s.platform       = :ios, "9.0"
   s.source         = { :git => "https://github.com/zhengmiaokai/UIComponents.git" :tag =>"UIComponents_1.0.0"}
 
-  #s.source_files   = "UIComponents/*"
-
-  s.subspec 'ToolKit' do |tt|
-    t't.source_files = 'UIComponents/UIComponents/ToolKit/*.{h,m}'
-  end
-
-  s.subspec 'BannerView' do |bb|
-    bb.source_files = 'UIComponents/UIComponents/BannerView/*.{h,m}'
-    bb.dependency 'UIComponents/ToolKit'
-  end
-
-  s.subspec 'PageControl' do |pa|
-    pa.source_files = 'UIComponents/UIComponents/PageControl/*.{h,m}'
-    pa.dependency  'UIComponents/ToolKit'
-  end
-
-  s.subspec 'NavigationBar' do |nn|
-    nn.source_files = 'UIComponents/UIComponents/NavigationBar/*.{h,m}'
-    nn.dependency  'UIComponents/ToolKit'
-  end
-
-  s.subspec 'ProgressHUD' do |pr|
-    pr.source_files = 'UIComponents/UIComponents/ProgressHUD/*.{h,m}'
-    pr.dependency  'UIComponents/ToolKit'
-  end
-
-  s.subspec 'ZoomScrollView' do |zz|
-    zz.source_files = 'UIComponents/UIComponents/ZoomScrollView/*.{h,m}'
-    zz.dependency  'UIComponents/ToolKit'
-  end
+  #s.source_files   = "UIComponents/**/*"
 
   s.frameworks = 'UIKit','Foundation'
   s.requires_arc   = true
+
+  s.subspec 'ToolKit' do |ss|
+    ss.source_files = 'UIComponents/UIComponents/ToolKit/**/*.{h,m}'
+  end
+
+  s.subspec 'BannerView' do |ss|
+    ss.source_files = 'UIComponents/UIComponents/BannerView/**/*.{h,m}'
+    ss.dependency 'UIComponents/ToolKit'
+  end
+
+  s.subspec 'PageControl' do |ss|
+    ss.source_files = 'UIComponents/UIComponents/PageControl/**/*.{h,m}'
+    ss.dependency  'UIComponents/ToolKit'
+  end
+
+  s.subspec 'NavigationBar' do |ss|
+    ss.source_files = 'UIComponents/UIComponents/NavigationBar/**/*.{h,m}'
+    ss.dependency  'UIComponents/ToolKit'
+  end
+
+  s.subspec 'ProgressHUD' do |ss|
+    ss.source_files = 'UIComponents/UIComponents/ProgressHUD/**/*.{h,m}'
+    ss.dependency  'UIComponents/ToolKit'
+  end
+
+  s.subspec 'ZoomScrollView' do |ss|
+    ss.source_files = 'UIComponents/UIComponents/ZoomScrollView/**/*.{h,m}'
+    ss.dependency  'UIComponents/ToolKit'
+  end
 
 end
