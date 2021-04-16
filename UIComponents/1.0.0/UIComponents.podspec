@@ -20,10 +20,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit','Foundation'
   s.requires_arc   = true
 
-  s.subspec 'ToolKit' do |ss|
-    ss.source_files = 'UIComponents/ToolKit/**/*.{h,m}'
-  end
-
   s.subspec 'BannerView' do |ss|
     ss.source_files = 'UIComponents/BannerView/**/*.{h,m}'
     ss.dependency 'UIComponents/ToolKit'
@@ -31,22 +27,20 @@ Pod::Spec.new do |s|
 
   s.subspec 'PageControl' do |ss|
     ss.source_files = 'UIComponents/PageControl/**/*.{h,m}'
-    ss.dependency  'UIComponents/ToolKit'
   end
 
   s.subspec 'NavigationBar' do |ss|
     ss.source_files = 'UIComponents/NavigationBar/**/*.{h,m}'
-    ss.dependency  'UIComponents/ToolKit'
   end
 
   s.subspec 'ProgressHUD' do |ss|
     ss.source_files = 'UIComponents/ProgressHUD/**/*.{h,m}'
-    ss.dependency  'UIComponents/ToolKit'
   end
 
   s.subspec 'ZoomScrollView' do |ss|
     ss.source_files = 'UIComponents/ZoomScrollView/**/*.{h,m}'
-    ss.dependency  'UIComponents/ToolKit'
   end
+
+  s.dependency  'MKUtils'
 
 end
