@@ -22,7 +22,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'BannerView' do |ss|
     ss.source_files = 'UIComponents/BannerView/**/*.{h,m}'
-    ss.dependency 'UIComponents/ToolKit'
   end
 
   s.subspec 'PageControl' do |ss|
