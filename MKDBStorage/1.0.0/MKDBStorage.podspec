@@ -22,5 +22,6 @@ Pod::Spec.new do |s|
 
   s.dependency  'MKUtils/Extern'
   s.dependency 'MKBasic/Model'
+  s.dependency 'FMDB'
 
 end
