@@ -40,6 +40,6 @@ Pod::Spec.new do |s|
     ss.source_files = 'UIComponents/ZoomScrollView/**/*.{h,m}'
   end
 
-  s.dependency  'MKUtils'
+  s.dependency  'MKUtils/Extern'
 
 end
